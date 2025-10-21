@@ -5,4 +5,4 @@ jobs:
     hello:
         runs-on: ubuntu-latest
         steps:
-            - run: echo "Caina is nice and is sad but code nicely"
+            - run: echo "Hello, There's a commit"
