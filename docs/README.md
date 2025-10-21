@@ -47,11 +47,11 @@ python src/caixa.py
 
 ## 🗺️ Roadmap
 - [x] Criar repo inicial no github.
-- [ ] Adicionar ao arquivo.py os or pathlib.
-- [ ] Refatorar o codigo por completo em funçoes menores para melhor desacoplamento das funçoes.
+- [ ] Adicionar ao arquivo.py o modulo Pathlib.
+- [ ] Refatorar o codigo seguindo conceitos SOLID e Clean Code.
 - [ ] Fazer tratamento de erro no codigo onde necessario.
 - [ ] Adicionar testes automaticos.
-- [ ] Conectar o codigo a um banco de dados relacional.
+- [ ] Conectar o codigo ao SQLite.
 - [ ] Configurar GitHub actions para CI/CD.
 
 
