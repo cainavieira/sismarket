@@ -3,12 +3,11 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/cainavieira/sismarket?style=for-the-badge)  
 ![Python](https://img.shields.io/badge/python-3.13.5-blue?style=for-the-badge&logo=python)  
 ![License](https://img.shields.io/github/license/leoinfnet/sisrel?style=for-the-badge)  
-![Version](https://img.shields.io/badge/version-1.0.0-blue?style=for-the-badge)  
-![Build](https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge&logo=github-actions)  
+![Version](https://img.shields.io/badge/version-1.0.0-blue?style=for-the-badge) 
 ![GITHUB](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
 
 ## 📌 Descrição
-**sismarket** é um projeto em **Python** criado como base de aprendizado no curso de Fundamentos de python e esse projeto se propoe a simular um caixa de atendimento de supermercado com atualizaçao de estoque devido à compras e vendas.  
+**sismarket** é um projeto em **Python** criado como base de aprendizado no curso de Fundamentos de Python e se propõe a simular um caixa de atendimento de supermercado com atualização de estoque devido a compras e vendas.
 O repositório reúne código, documentação e conhecimentos que vão evoluir ao longo das minhas aulas na universidade.
 
 ## 📂 Estrutura do Projeto
@@ -17,16 +16,16 @@ sismarket/
     src/
         ├── arquivo.py        # Administra o fluxo do estoque.
         ├── caixa.py          # Arquivo onde o programa roda.
-        └── crud.py           # Funçoes principais do programa.
+        └── crud.py           # Funções principais do programa.
         └── estoque.csv       # Estoque do sistema.
-        └── menu.py           # Gere as opçoes disponiveis ao caixa e ao estoque.
-        └── util.py           #Funçoes auxiliares ao codigo.
+        └── menu.py           # Gera as opções disponíveis ao caixa e ao estoque.
+        └── util.py           # Funções auxiliares ao codigo.
     docs/
-        └── CONTRIBUTING.md   #Arquivo que mostra regras de boas praticas de contribuiçao.
-        └── README.md         #Arquivo que explica a proposta do projeto.
-        └── LICENSE           #Licença MIT.
+        └── CONTRIBUTING.md   # Arquivo que mostra regras de boas práticas de contribuição.
+        └── README.md         # Arquivo que explica a proposta do projeto.
+        └── LICENSE           # Licença MIT.
     .github/
-        └── .gitignore        #Arquivo padrao git para ignorar certos documentos.
+        └── .gitignore        # Arquivo padrão Git para ignorar certos documentos# 
 ```
 ---
 ## 🚀 Como Executar
@@ -46,12 +45,12 @@ python src/caixa.py
 --- 
 
 ## 🗺️ Roadmap
-- [x] Criar repo inicial no github.
-- [ ] Adicionar ao arquivo.py o modulo Pathlib.
-- [ ] Refatorar o codigo seguindo conceitos SOLID e Clean Code.
-- [ ] Fazer tratamento de erro no codigo onde necessario.
+- [x] Criar repositório inicial no github.
+- [ ] Adicionar ao arquivo.py o módulo Pathlib.
+- [ ] Refatorar o código seguindo conceitos SOLID e Clean Code.
+- [ ] Fazer tratamento de erro no código onde necessário.
 - [ ] Adicionar testes automaticos.
-- [ ] Conectar o codigo ao SQLite.
+- [ ] Conectar o código ao SQLite.
 - [ ] Configurar GitHub actions para CI/CD.
 
 
