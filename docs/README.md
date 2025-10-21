@@ -39,7 +39,7 @@ python src/caixa.py
 
 ---
 ## 🛠️ Tecnologias Utilizadas
-- [Python 3.x](https://www.python.org/)  
+- [Python 3.13.5](https://www.python.org/)  
 - GitHub (controle de versão e colaboração)  
 
 --- 
