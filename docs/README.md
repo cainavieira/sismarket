@@ -44,15 +44,21 @@ python src/caixa.py
 
 --- 
 
+## 🖇️ Database Integration
+- O projeto atualmente está integrado ao banco de dados na nuvem: **Neon.tech**.
+- As **credenciais** do banco de dados estão protegidas em arquivo .env, sem commit.
+- Desenvolvedores interessados em usar o projeto podem criar suas próprias bases de dados no **Neon**.
+
+---
+
 ## 🗺️ Roadmap
 - [x] Criar repositório inicial no github.
-- [ ] Adicionar ao arquivo.py o módulo Pathlib.
+- [x] Implementação de .env e pathlib para gestão de segredos.
+- [x] Conexão do sistema ao SGBD PostgreSQL para persistência de dados.
 - [ ] Refatorar o código seguindo conceitos SOLID e Clean Code.
 - [ ] Fazer tratamento de erro no código onde necessário.
 - [ ] Adicionar testes automaticos.
-- [ ] Conectar o código ao SQLite.
 - [ ] Configurar GitHub actions para CI/CD.
-
 
 ---
 
@@ -61,7 +67,7 @@ Padrão de commits: [Conventional Commits](https://www.conventionalcommits.org/)
 [Dicas](CONTRIBUTING.md)
 
 ---
-## Author 
+## 🧑‍💻 Author 
 CVT
 [Perfil do Github](https://github.com/cainavieira)
 
