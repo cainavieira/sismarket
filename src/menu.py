@@ -1,4 +1,4 @@
-from arquivo import gravar_estoque, ler_estoque
+from banco import gravar_estoque_db, ler_estoque_db
 from crud import inserir_produto,exibir_estoque,atender_cliente,exibir_cliente,listar_atendimentos,exibir_caixa_fechado,exibir_produto,voltar_menu,atualizar_estoque,checar_produtos_sem_estoque,exibir_produtos_sem_estoque
 from util import validar_inteiro
 
@@ -37,7 +37,7 @@ def digitar_opcao_inicial():
 
 #Funçoes do  caixa
 def digitar_opcao_2():
-    estoque_infos = ler_estoque()
+    estoque_infos = ler_estoque_db()
     id_cliente = 1 
     tabela_clientes = []
     tabela_cliente = []
@@ -52,8 +52,8 @@ def digitar_opcao_2():
             exibir_produtos_sem_estoque(produtos_sem_estoque)
             break
         elif (opcao == 1): 
-            inserir_produto(estoque_infos)
-            gravar_estoque(estoque_infos)
+            novo_estoque = inserir_produto(estoque_infos)
+            gravar_estoque_db(novo_estoque)
         elif (opcao == 2):
             exibir_estoque(estoque_infos)
         elif (opcao == 3):
@@ -61,7 +61,7 @@ def digitar_opcao_2():
                 resultado = atender_cliente(estoque_infos, tabela_cliente, id_cliente, compras)
                 if resultado: 
                     tabela_cliente, id_cliente, total_compra, items = resultado
-                    gravar_estoque(estoque_infos)
+                    gravar_estoque_db(estoque_infos)
                     exibir_cliente(id_cliente, tabela_cliente, total_compra,items)
                     exibir_menu_atendimento()
                     opcao = int(input("Entre com uma opcao: "))

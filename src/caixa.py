@@ -1,10 +1,10 @@
-from arquivo import ler_estoque
+from banco import ler_estoque_db
 from crud import abrir_caixa
 from menu import digitar_opcao_inicial,digitar_opcao_2
 
-estoque_infos = ler_estoque() #A informaçao do estoque com produtos
-menu_estoque = digitar_opcao_2
 
+estoque_infos = ler_estoque_db() #A informaçao do estoque com produtos
+menu_estoque = digitar_opcao_2
 #Caixa com as operaçoes
 opcao = digitar_opcao_inicial()
 while (True):
