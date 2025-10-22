@@ -1,6 +1,6 @@
-from arquivo import ler_estoque
+from banco import ler_estoque_db
 
-estoque_infos = ler_estoque()
+estoque_infos = ler_estoque_db()
 
 # Procurar conta especifica
 def pesquisar_produto(estoque_infos, id):
