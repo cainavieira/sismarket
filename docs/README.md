@@ -56,12 +56,14 @@ Copie as credenciais de conexão fornecidas (dbname,host,user,password,sslmode,c
 
 No diretório raiz do projeto, crie um arquivo chamado credentials.env contendo:
 
+```
 PGDATABASE=nome_do_seu_banco
 PGHOST=seu_host_da_neon
 PGUSER=seu_usuario
 PGPASSWORD=sua_senha
 PGSSLMODE=require
 PGCHANNELBINDING=prefer
+```
 
 - Garanta que o arquivo credentials.env não seja versionado:
 - O .gitignore já está configurado para ignorar esse arquivo.
