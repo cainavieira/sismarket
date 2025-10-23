@@ -3,8 +3,7 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/cainavieira/sismarket?style=for-the-badge)  
 ![Python](https://img.shields.io/badge/python-3.13.5-blue?style=for-the-badge&logo=python)  
 ![License](https://img.shields.io/github/license/leoinfnet/sisrel?style=for-the-badge)  
-![Version](https://img.shields.io/badge/version-1.0.0-blue?style=for-the-badge) 
-![GITHUB](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
+![Version](https://img.shields.io/badge/version-1.1.0-blue?style=for-the-badge) 
 
 ---
 
@@ -36,7 +35,7 @@ Clone este repositório e rode o arquivo principal:
 git clone https://github.com/SEU_USUARIO/sismarket.git
 cd sismarket
 cd src
-python /caixa.py
+python caixa.py
 ```
 
 ---
