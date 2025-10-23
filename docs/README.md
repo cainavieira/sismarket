@@ -6,6 +6,8 @@
 ![Version](https://img.shields.io/badge/version-1.0.0-blue?style=for-the-badge) 
 ![GITHUB](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
 
+---
+
 ## 📌 Descrição
 **sismarket** é um projeto em **Python** criado como base de aprendizado no curso de Fundamentos de Python e se propõe a simular um caixa de atendimento de supermercado com atualização de estoque devido a compras e vendas.
 O repositório reúne código, documentação e conhecimentos que vão evoluir ao longo das minhas aulas na universidade.
@@ -14,10 +16,9 @@ O repositório reúne código, documentação e conhecimentos que vão evoluir a
 ```
 sismarket/
     src/
-        ├── arquivo.py        # Administra o fluxo do estoque.
+        ├── banco.py          # Administra o banco de dados do estoque.
         ├── caixa.py          # Arquivo onde o programa roda.
         └── crud.py           # Funções principais do programa.
-        └── estoque.csv       # Estoque do sistema.
         └── menu.py           # Gera as opções disponíveis ao caixa e ao estoque.
         └── util.py           # Funções auxiliares ao codigo.
     docs/
@@ -39,16 +40,44 @@ python /caixa.py
 ```
 
 ---
+
+## 🖇️ Database Integration
+💾 Agora o sistema utiliza um banco de dados PostgreSQL hospedado na Neon.tech para garantir a persistência dos dados.
+
+---
+
+
+## ⚙️ Configuração do Banco de Dados
+
+Para executar o projeto corretamente, siga os passos abaixo:
+
+Crie uma conta gratuita em **Neon.tech** e gere um novo banco PostgreSQL.
+Copie as credenciais de conexão fornecidas (dbname,host,user,password,sslmode,channel_binding).
+
+No diretório raiz do projeto, crie um arquivo chamado credentials.env contendo:
+
+PGDATABASE=nome_do_seu_banco
+PGHOST=seu_host_da_neon
+PGUSER=seu_usuario
+PGPASSWORD=sua_senha
+PGSSLMODE=require
+PGCHANNELBINDING=prefer
+
+- Garanta que o arquivo credentials.env não seja versionado:
+- O .gitignore já está configurado para ignorar esse arquivo.
+- Depois de configurar o .env, execute novamente:
+- python caixa.py
+
+**🧠 Dica**
+
+Se quiser usar um banco local em vez do Neon, basta criar um banco PostgreSQL local e atualizar os valores do .env com suas credenciais.
+
+--- 
+
 ## 🛠️ Tecnologias Utilizadas
 - [Python 3.13.5](https://www.python.org/)  
 - GitHub (controle de versão e colaboração)  
 
---- 
-
-## 🖇️ Database Integration
-- O projeto atualmente está integrado ao banco de dados na nuvem: **Neon.tech**.
-- As **credenciais** do banco de dados estão protegidas em arquivo .env, sem commit.
-- Desenvolvedores interessados em usar o projeto podem criar suas próprias bases de dados no **Neon**.
 
 ---
 
