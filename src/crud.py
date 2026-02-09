@@ -26,14 +26,10 @@ def abrir_caixa(estoque_infos):
     
 def inserir_produto(estoque_infos):
     id = len(estoque_infos) + 1
-    print("O numero do id que vai ser inseirod na lista é: ",id)
     nome = input("Insira o nome do produto: ") #to do min length
     quantidade = entrar_inteiro(msg= f"Insira a quantidade de {nome}: ")
     preco = entrar_float(msg= f"Insira o preco do {nome}: ")
     estoque_infos.append([id,nome,quantidade,preco])
-    print(estoque_infos)
-    for info in estoque_infos:
-        print(info)
     return estoque_infos
     
 def atualizar_estoque(estoque_infos):
