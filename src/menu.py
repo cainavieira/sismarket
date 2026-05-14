@@ -64,7 +64,7 @@ def digitar_opcao_2():
                     gravar_estoque_db(estoque_infos)
                     exibir_cliente(id_cliente, tabela_cliente, total_compra,items)
                     exibir_menu_atendimento()
-                    opcao = int(input("Entre com uma opcao: "))
+                    opcao = validar_inteiro("Entrar com uma opcao: ")
                     if (opcao == 1): continue
                     elif (opcao == 0): 
                         tabela_cliente.clear()
@@ -76,7 +76,7 @@ def digitar_opcao_2():
                     else:
                         print("Numero Invalido\nNumero precisa ser 0 ou 1")
                         while (opcao not in [1,2]):
-                            opcao = int(input("Entre com uma opcao: "))
+                            opcao = validar_inteiro("Entre com uma opcao: ")
                             print("Numero Invalido\nNumero precisa ser 0 ou 1")
         elif (opcao == 4):
             atualizar_estoque(estoque_infos)
